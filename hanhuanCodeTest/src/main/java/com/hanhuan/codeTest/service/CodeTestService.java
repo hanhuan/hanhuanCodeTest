@@ -23,12 +23,13 @@ import com.hanhuan.codeTest.dto.Recipe;
  */
 @Service
 public class CodeTestService {
+	
 	/* 
 	 *    analysis of recipes
 	 */
 	public String analysis(Map<String, Item> itemMap, List<Recipe> recipes)
 			throws ParseException {
-		String result = "Order Takeout";
+		String result="Order TakeOut";
 		Map<Long, Object> resultMap = new HashMap<Long, Object>();
 		for (Recipe recipe : recipes) {
 			Map<String, Object> recipeMap = analysisRecipes(itemMap, recipe);
